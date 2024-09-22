@@ -1,0 +1,82 @@
+/* Estilo general */
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links de la barra de navegación -arriba */
+header {
+    background-color: #000000;
+    padding: 20px; /*separación */
+    text-align: center; /*alineacion*/
+}
+
+nav a {
+    color: #fff; /*color de letra*/
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #61dafb; /*al pasar el cursor sobre el link*/
+    border-radius: 5px; /*bordes de los links*/
+}
+
+/* Sección principal */
+.principal {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+ /*ELEMENTOS DE PORFOLIO PARA QUE QUEDEN UNO AL LADO DEL OTRO */
+ section {
+    display: flex; /*convierte el contedor en "flex"*/
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si es necesario */
+}
+    section div {
+    flex: 1;                        /*Cada elemento dentro del section ocupa un mismo ancho*/
+    margin: 10px;                   /* Un pequeño margen entre los elementos */
+    background-color: #000000;      /*Solo para visualizar mejor el layout*/
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    box-sizing: border-box;         /*Incluye padding y borde en el cálculo del ancho total*/
+}
+
+
+.principal h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.principal {
+    box-shadow: 0 0 15px 5px rgba(209, 207, 207, 0.3); /*se podría usar gradiente*/
+}
+
+.principal p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; /*distancia*/
+}
